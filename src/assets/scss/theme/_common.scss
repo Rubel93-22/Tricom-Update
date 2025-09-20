@@ -1,0 +1,268 @@
+@use '../utils/' as *;
+
+// .flex-wrap{
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+// .items-center{
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
+// .justify-between{
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
+
+// .flex-center{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+// }
+
+// /*----------------------------------------*/ 
+// /*  1.2 Common Classes
+// /*----------------------------------------*/
+
+
+// .theme-btn__radiud {
+// 	border-radius: 4px;
+// }
+
+// .w-img{
+// 	& img{
+// 		width: 100%;
+// 	}
+// }
+// .m-img{
+// 	& img{
+// 		max-width: 100%;
+// 	}
+// }
+// img{
+// 	max-width: 100%;
+// }
+
+// .fix {
+//     overflow:hidden
+// }
+// .clear{
+//     clear: both;
+// }
+
+// .z-index-1{
+// 	z-index: 1;
+// }
+// .z-index-2{
+// 	z-index: 2;
+// }
+// .z-index-3{
+// 	z-index: 3;
+// }
+
+// .z-index-11{
+// 	z-index: 11;
+// }
+// .bg-pos-end{
+// 	background-position: bottom;
+// 	background-repeat: no-repeat;
+// }
+// .overflow-y-visible{
+// 	overflow-x: hidden;
+// 	overflow-y: visible;
+// }
+// .overflow-x-visible{
+// 	overflow-x: visible;
+// 	overflow-y: hidden;
+// }
+
+// .p-relative{
+// 	position: relative;
+// }
+// .p-absolute{
+// 	position: absolute;
+// }
+
+:root {
+  --slider-padding: 48px;
+  --border-radius: 12px;
+}
+
+.header-item {
+  color: var(--heading-color) !important;
+  font-family: var(--body-font);
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.section-gap {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 36px;
+  color: rgb(var(--heading-color));
+
+  @include sm-screen {
+    text-align: center;
+  }
+
+  @include mobile-screen {
+    font-size: 30px;
+  }
+}
+
+.section-box {
+  padding: var(--slider-padding);
+  background: rgb(var(--white));
+  border-radius: var(--border-radius);
+
+  @include mobile-screen {
+    padding: 30px;
+  }
+}
+
+.content-title {
+  color: rgb(var(--heading-color));
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.content-subtitle {
+  margin: 16px 0;
+  line-height: 160%;
+}
+
+.price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.price {
+  color: rgb(var(--theme-color-2));
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.add-to-cart-btn {
+  margin-top: 16px;
+
+  button {
+    padding: 16px 12px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(var(--white));
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    border-radius: 4px;
+    background: rgb(var(--theme-color));
+
+    @include mobile-screen {
+      font-size: 14px;
+    }
+
+    iconify-icon {
+      font-size: 22px;
+    }
+
+    @include xl-screen {
+      padding: 12px;
+    }
+  }
+}
+
+.desc-title {
+  color: #302F2F;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 160%;
+
+  @include four-xl-screen {
+    font-size: 23px;
+    line-height: 100%;
+  }
+
+  @include lg-screen {
+    font-size: 20px;
+  }
+}
+
+
+.discount-badge {
+  text-align: right;
+
+  .discount-btn {
+    border-radius: 12px 0;
+    color: #FFF;
+    padding: 10px;
+    background: rgb(var(--theme-color-2));
+  }
+}
+
+
+@media (min-width: 1700px) {
+
+  .container,
+  .container-xxl {
+    max-width: 1620px;
+  }
+}
+
+.d-none-xl {
+  @include xl-screen {
+    display: none !important;
+  }
+}
+
+.d-none-lg {
+  @include lg-screen {
+    display: none !important;
+  }
+}
+
+.d-none-md {
+  @include md-screen {
+    display: none !important;
+  }
+}
+
+.d-none-sm {
+  @include sm-screen {
+    display: none !important;
+  }
+}
+
+.d-none-msm {
+  @include msm-screen {
+    display: none;
+  }
+}
+
+.mb-msm-4 {
+  @include msm-screen {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.mt-msm-4 {
+  @include msm-screen {
+    margin-top: 1.5rem !important;
+  }
+}
+
+.custom-screen {
+  @include custom-screen {
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+//*  Scss variable start  */
+$variations: (
+  base,
+  primary,
+  secondary,
+  info,
+  warning,
+  success,
+  danger) !default;
+
+$transition: all 0.2s ease-in-out;
+//*  Scss variable end  */
+
+:root {
+  /*=== Variable Color on RGB ===*/
+
+  // rgb(var(--body-color)) rbg syntax 
+
+
+  //   #FF3F3F 
+  --theme-color: 255,
+    63,
+    63;
+  //   #3BB77E
+  --theme-color-2: 59,
+    183,
+    126;
+  //   #656565
+  --body-color: 101,
+    101,
+    101;
+  // #F5F7FA
+  --body-bg: 245,
+    247,
+    250;
+  // #302F2F
+  --heading-color: 48,
+    47,
+    47;
+  // #D5DFE6
+  --border-color: 213,
+    223,
+    230;
+
+  //   #737373
+  --dim-grey: 115,
+    115,
+    115;
+
+  --white: 255,
+    255,
+    255;
+  --black: 0,
+    0,
+    0;
+  --dark: 3,
+    4,
+    68;
+
+  /*=== Bootstrap Color on RGB ===*/
+  --primary: 13,
+    110,
+    253;
+  --secondary: 108,
+    117,
+    125;
+  --warning: 255,
+    193,
+    7;
+  --info: 13,
+    202,
+    240;
+  --success: 25,
+    135,
+    84;
+  --danger: 220,
+    53,
+    69;
+}

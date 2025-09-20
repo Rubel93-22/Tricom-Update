@@ -1,0 +1,82 @@
+.best-sell {
+  .best-sell {
+    background: rgb(var(--white));
+    border-radius: var(--border-radius);
+
+    .best-sell-header {}
+
+    .best-sell-slider {
+      .best-sell-item {
+        padding: 24px;
+        background: #FFF;
+        border-radius: var(--border-radius);
+        border: 1px solid #D5DFE6;
+        margin: 10px;
+
+        .discount-badge {
+          .discount-btn-two {
+            display: inline-block;
+            padding: 5px 12px 5px 15px;
+            border-radius: 15px 0px 20px 0px;
+            background-color: rgb(var(--theme-color-2));
+            color: rgb(var(--white));
+          }
+        }
+
+        .best-sell-item-content {
+          .sold {
+            color: #656565;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%;
+            display: block;
+            margin-top: 16px;
+          }
+
+          span {
+            color: #1D1D1D;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+
+          .content-subtitle {
+            margin-bottom: 16px;
+          }
+
+          .price {
+            margin-bottom: 16px;
+          }
+
+          .progress {
+            height: 5px;
+
+            .bg-success {
+              background-color: rgb(var(--theme-color)) !important;
+            }
+          }
+
+          .best-sell-btn {
+            margin-top: 16px;
+            padding: 16px 12px;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: rgb(var(--white));
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 160%;
+            border-radius: 4px;
+            background: rgb(var(--theme-color));
+
+            iconify-icon {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

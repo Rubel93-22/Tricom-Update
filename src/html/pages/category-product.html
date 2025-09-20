@@ -1,0 +1,458 @@
+<div class="category-product-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 p-0">
+
+                <div class="filter-sidebar bg-white custom-screen">
+                    <h6 class="price-range-heading">Price Range</h6>
+                    <div class="filter-sidebar__price-range">
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search ">
+                        <div class="search-box__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M15.8045 14.8619L11.8252 10.8825C12.9096 9.55625 13.4428 7.86392 13.3144 6.15556C13.1861 4.44721 12.406 2.85354 11.1356 1.7042C9.86516 0.554862 8.20158 -0.0622172 6.48895 -0.019396C4.77632 0.0234252 3.14566 0.72287 1.93426 1.93426C0.72287 3.14566 0.0234252 4.77632 -0.019396 6.48895C-0.0622172 8.20158 0.554862 9.86516 1.7042 11.1356C2.85354 12.406 4.44721 13.1861 6.15556 13.3144C7.86392 13.4428 9.55625 12.9096 10.8825 11.8252L14.8619 15.8045C14.9876 15.926 15.156 15.9932 15.3308 15.9916C15.5056 15.9901 15.6728 15.92 15.7964 15.7964C15.92 15.6728 15.9901 15.5056 15.9916 15.3308C15.9932 15.156 15.926 14.9876 15.8045 14.8619ZM6.66652 11.9999C5.61169 11.9999 4.58054 11.6871 3.70348 11.101C2.82642 10.515 2.14283 9.68204 1.73916 8.7075C1.3355 7.73296 1.22988 6.6606 1.43567 5.62604C1.64145 4.59147 2.14941 3.64117 2.89529 2.89529C3.64117 2.14941 4.59147 1.64145 5.62604 1.43567C6.6606 1.22988 7.73296 1.3355 8.7075 1.73916C9.68204 2.14283 10.515 2.82642 11.101 3.70348C11.6871 4.58054 11.9999 5.61169 11.9999 6.66652C11.9983 8.08052 11.4359 9.43615 10.436 10.436C9.43615 11.4359 8.08052 11.9983 6.66652 11.9999Z"
+                                    fill="#656565" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="price-input">
+                        <div class="field">
+                            <span class="price-input__range">Min</span>
+                            <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="field">
+                            <span class="price-input__range">Max</span>
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+
+
+                    <div class="accordion filter-accordion" id="filtersAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#availability">
+                                    Availability
+                                </button>
+                            </h2>
+                            <div id="availability" class="accordion-collapse collapse"
+                                data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox" id="inStock" checked> In Stock</div>
+                                    <div><input type="checkbox"> Up Coming</div>
+                                    <div><input type="checkbox"> Add</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type">
+                                    Type
+                                </button>
+                            </h2>
+                            <div id="type" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Business</div>
+                                    <div><input type="checkbox"> Gaming</div>
+                                    <div><input type="checkbox"> Premium</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type1">
+                                    Processor
+                                </button>
+                            </h2>
+                            <div id="type1" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type2">
+                                    Generation
+                                </button>
+                            </h2>
+                            <div id="type2" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type3">
+                                    Display Size
+                                </button>
+                            </h2>
+                            <div id="type3" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type4">
+                                    Ram
+                                </button>
+                            </h2>
+                            <div id="type4" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type5">
+                                    SSD
+                                </button>
+                            </h2>
+                            <div id="type5" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type6">
+                                    GPU
+                                </button>
+                            </h2>
+                            <div id="type6" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type7">
+                                    GPU
+                                </button>
+                            </h2>
+                            <div id="type7" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#type8">
+                                    Feature
+                                </button>
+                            </h2>
+                            <div id="type8" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                                <div class="accordion-body">
+                                    <div><input type="checkbox"> Intel</div>
+                                    <div><input type="checkbox"> M1</div>
+                                    <div><input type="checkbox"> M2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Button (visible on mobile/tablet only) -->
+                <button class="btn btn-outline-secondary d-xl-none mb-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#filterSidebar">
+                    <i class="bi bi-funnel"></i> Filters
+                </button>
+
+                <!-- Offcanvas Sidebar -->
+                <div class="offcanvas custom-offcanvas offcanvas-start d-xl-block" tabindex="-1" id="filterSidebar">
+                    <!-- Offcanvas header (hidden on desktop) -->
+                    <div class="offcanvas-header d-lg-none">
+                        <h5 class="offcanvas-title">Filters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <!-- Offcanvas body -->
+                    <div class="offcanvas-body p-3">
+                        <div class="filter-sidebar bg-white">
+
+                            <!-- Price Range -->
+                            <h6 class="price-range-heading">Price Range</h6>
+                            <div class="filter-sidebar__price-range mb-3">
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                            </div>
+
+                            <!-- Search -->
+                            <div class="search-box mb-3">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+
+                            <!-- Price Inputs -->
+                            <div class="price-input d-flex gap-2 mb-3">
+                                <div class="field flex-fill">
+                                    <label class="price-input__range">Min</label>
+                                    <input type="number" class="form-control input-min" value="2500">
+                                </div>
+                                <div class="field flex-fill">
+                                    <label class="price-input__range">Max</label>
+                                    <input type="number" class="form-control input-max" value="7500">
+                                </div>
+                            </div>
+
+                            <!-- Accordion Filters -->
+                            <div class="accordion filter-accordion" id="filtersAccordion">
+
+                                <!-- Availability -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#availability">
+                                            Availability
+                                        </button>
+                                    </h2>
+                                    <div id="availability" class="accordion-collapse collapse"
+                                        data-bs-parent="#filtersAccordion">
+                                        <div class="accordion-body">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="inStock" checked> <label class="form-check-label"
+                                                    for="inStock">In Stock</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="upComing"> <label class="form-check-label" for="upComing">Up
+                                                    Coming</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="add"> <label class="form-check-label" for="add">Add</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Type -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#type">
+                                            Type
+                                        </button>
+                                    </h2>
+                                    <div id="type" class="accordion-collapse collapse"
+                                        data-bs-parent="#filtersAccordion">
+                                        <div class="accordion-body">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="business"> <label class="form-check-label"
+                                                    for="business">Business</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="gaming"> <label class="form-check-label"
+                                                    for="gaming">Gaming</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="premium"> <label class="form-check-label"
+                                                    for="premium">Premium</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Example: Processor -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#processor">
+                                            Processor
+                                        </button>
+                                    </h2>
+                                    <div id="processor" class="accordion-collapse collapse"
+                                        data-bs-parent="#filtersAccordion">
+                                        <div class="accordion-body">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="intel"> <label class="form-check-label"
+                                                    for="intel">Intel</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="m1"> <label class="form-check-label" for="m1">M1</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                    id="m2"> <label class="form-check-label" for="m2">M2</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add other accordions (Generation, RAM, SSD, GPU, Feature...) -->
+                                <!-- Just repeat the structure above with unique IDs -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-9 p-0">
+                <div class="category-product__wrapper">
+                    <div class="category-product">
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html')
+                        @@include('html/component/_product-card.html') 
+                        @@include('html/component/_product-card.html')
+                    </div>
+
+                    <nav class="d-flex justify-items-center justify-content-between">
+                        <div class="d-flex justify-content-between flex-fill d-sm-none">
+                            <ul class="pagination">
+
+                                <li class="page-item">
+                                    <a class="page-link" href="http://localhost/laratest?page=8" rel="prev">«
+                                        Previous</a>
+                                </li>
+
+
+                                <li class="page-item">
+                                    <a class="page-link" href="http://localhost/laratest?page=10" rel="next">Next
+                                        »</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+                            <div>
+                                <p class="small text-muted">
+                                    Showing
+                                    <span class="fw-semibold">25</span>
+                                    to
+                                    <span class="fw-semibold">27</span>
+                                    of
+                                    <span class="fw-semibold">50</span>
+                                    results
+                                </p>
+                            </div>
+                            <div>
+                                <ul class="pagination">
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="http://localhost/laratest?page=8" rel="prev"
+                                            aria-label="« Previous">‹</a>
+                                    </li>
+
+
+
+
+
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=1">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=2">2</a>
+                                    </li>
+
+                                    <li class="page-item disabled" aria-disabled="true"><span
+                                            class="page-link">...</span>
+                                    </li>
+
+
+
+
+
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=6">6</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=7">7</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=8">8</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><span class="page-link">9</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=10">10</a></li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=11">11</a></li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=12">12</a></li>
+
+                                    <li class="page-item disabled" aria-disabled="true"><span
+                                            class="page-link">...</span>
+                                    </li>
+
+
+
+
+
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=16">16</a></li>
+                                    <li class="page-item"><a class="page-link"
+                                            href="http://localhost/laratest?page=17">17</a></li>
+
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="http://localhost/laratest?page=10" rel="next"
+                                            aria-label="Next »">›</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+//* ============================ Media Breakpoint for Each Device Start ============================ */
+
+// $breakpoints: ( 
+//   xxsm: 375px,
+//   xsm: 480px,
+//   xs: 575px,
+//   sm: 767px,
+//   md: 991px,
+//   lg: 1199px,
+//   xl: 1399px,
+//   xxl: 1599px
+// );
+
+// /// Usage: @include sm-screen; or @include respond-to(sm, orientation: landscape);
+// @mixin respond-to($size, $orientation: null) {
+//   @if map-has-key($breakpoints, $size) {
+//     $query: "screen and (max-width: #{map-get($breakpoints, $size)})";
+
+//     @if $orientation != null {
+//       $query: "#{$query} and (orientation: #{$orientation})";
+//     }
+
+//     @media #{$query} {
+//       @content;
+//     }
+//   } @else {
+//     @warn "No breakpoint found for `#{$size}`.";
+//   }
+// }
+
+//Mobile Landscape
+@mixin landscape {
+  @media all and (orientation: landscape) {
+    @content;
+  }
+}
+
+//Mobile Portrait
+@mixin portrait {
+  @media all and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-screen {
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    @content;
+  }
+}
+
+//Extra Extra Small Screen
+@mixin xxsm-screen {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+}
+
+// Xtra Small
+@mixin xsm-screen {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+// Medium Small Screen (max-width: 575)
+@mixin msm-screen {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+
+//Small Screen (max-width: 767)
+@mixin sm-screen {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Large Screen (max-width: 991)
+@mixin md-screen {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen (max-width: 1199)
+@mixin lg-screen {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen i (max-width: 1399)
+@mixin xl-screen {
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen ii (max-width: 1499)
+@mixin xxl-screen {
+  @media screen and (max-width: 1499px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen ii (max-width: 1599)
+@mixin xxxl-screen {
+  @media screen and (max-width: 1599px) {
+    @content;
+  }
+}
+
+@mixin four-xl-screen {
+  @media screen and (max-width: 1699px) {
+    @content;
+  }
+}
+
+@mixin custom-screen {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}

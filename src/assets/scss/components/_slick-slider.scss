@@ -1,0 +1,120 @@
+@use '../utils/' as *;
+
+.slick-slider {
+    margin-top: 42px;
+    position: relative;
+    @include sm-screen {
+        margin-top: 30px;
+    }
+    .slick-prev,
+    .slick-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+        color: #000;
+        border-radius: 50%;
+        border: 1px solid #7E7E7E !important;
+
+        @include sm-screen {
+            border: none !important;
+        }
+
+        iconify-icon {
+            font-size: 24px;
+            color: rgb(var(--body-color));
+
+            @include sm-screen {
+                font-size: 18px;
+            }
+
+            &:hover {
+                color: rgb(var(--white));
+            }
+
+            &:active {
+                color: rgb(var(--white));
+            }
+        }
+
+        &:hover {
+            border: none !important;
+            border-radius: 50%;
+            background: rgb(var(--heading-color));
+            color: rgb(var(--white));
+        }
+
+        &:active {
+            border: none !important;
+            border-radius: 50%;
+            background: rgb(var(--heading-color));
+            color: rgb(var(--white));
+        }
+    }
+
+    .slick-prev {
+        top: -79px;
+        right: 62px;
+        @include sm-screen {
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include mobile-screen {
+            left: -23px;
+        }
+
+    }
+
+    .slick-next {
+        top: -79px;
+        right: 20px;
+
+        @include sm-screen {
+            right: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include mobile-screen {
+            right: -23px;
+        }
+    }
+
+    iconify-icon {
+        font-size: 30px;
+    }
+    .slick-slide {
+        margin: 10px;
+        @include mobile-screen {
+            
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+// .slick-dots {
+//     text-align: center;
+//     margin: 30px 0 0;
+//     padding: 0;
+//     list-style: none;
+
+//     li {
+//         display: inline-block;
+//         margin: 0 5px;
+//         button {
+//             border: 0;
+//             width: 20px;
+//             height: 20px;
+//             border-radius: 50%;
+//             text-indent: -999999px;
+//             background: rgb(var(--theme-color));
+
+//         }
+//     }
+// }

@@ -1,0 +1,72 @@
+@use '../utils/' as *;
+
+.hero-section {
+    margin-top: 84px;
+
+    .hero-section-wrapper {
+        @include sm-screen {
+            padding: 42px 0px 30px 0px;
+        }
+        .hero-content {
+            text-align: center;
+            .hero-subtitle {
+                span {
+                    color: rgb(var(--heading-color));
+                    font-family: var(--heading-font);
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 160%;
+
+                    @include sm-screen {
+                        font-size: 26px;
+                        line-height: normal;
+                    }
+                }
+
+
+                p {
+                    color: rgb(var(--theme-color));
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 1.92px;
+
+                    @include sm-screen {
+                        line-height: normal;
+                        letter-spacing: 1.6px;
+                    }
+                }
+            }
+
+            .btn-shop {
+                padding: 18px 32px;
+                display: inline-block;
+                background: rgb(var(--theme-color));
+                color: rgb(var(--white));
+                text-align: center;
+                font-family: var(--body-font);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 160%;
+                border-radius: 4px;
+
+                @include sm-screen {
+                    padding: 10px 50px;
+                }
+            }
+
+            .hero-title {
+                font-size: 60px;
+                margin: 20px 0;
+
+                @include md-screen {
+                    font-size: 42px;
+                }
+
+                @include mobile-screen {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}

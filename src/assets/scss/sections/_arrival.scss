@@ -1,0 +1,9 @@
+@use 'utils' as *;
+
+.arrival-area {
+
+  .arrival {
+    background: rgb(var(--white));
+    border-radius: var(--border-radius);
+  }
+}

@@ -1,0 +1,122 @@
+@use '../utils/' as *;
+
+.trending-area {
+    .trending-inner {
+        @include mobile-screen {
+            text-align: center;
+        }
+
+        .section-title {
+            @include mobile-screen {
+                text-align: center !important;
+            }
+        }
+
+        .trending-box {
+            margin-top: 42px;
+
+            @include sm-screen {
+                margin-top: 30px;
+            }
+
+            .trending-content {
+
+                .rating-star {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    @include mobile-screen {
+                        justify-content: center;
+                    }
+
+                    iconify-icon {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        color: #302F2F;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 160%;
+                        //   @include respond (sm) {
+                        //     font-size: 14px;
+                        //   }
+                    }
+                }
+
+                p {
+                    margin: 20px 0;
+                    color: #656565;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    // @include respond (sm) {
+                    //   font-size: 14px;
+                    //   line-height: 1.6;
+                    // }
+
+                    // @include respond (xs) {
+                    //   margin: 15px 0;
+                    // }
+                }
+
+                .trending-price {
+                    font-family: var(--heading-font);
+                    display: flex;
+                    gap: 28px;
+                    align-items: center;
+                    color: #302F2F;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 160%;
+
+                    @include msm-screen {
+                        display: grid;
+                        gap: 10px;
+                        line-height: 100%;
+                    }
+
+                    span {
+                        font-family: var(--inter);
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #656565;
+                        line-height: 160%;
+                    }
+                }
+
+                .order-btn {
+                    display: inline-block;
+                    color: #ffff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 160%;
+                    margin-top: 42px;
+                    border-radius: 4px;
+                    padding: 18px 82px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 160%;
+                    background: rgb(var(--theme-color));
+
+                    @include sm-screen {
+                        margin-top: 30px;
+                        padding: 12px 82px;
+                    }
+
+                    
+                    @include mobile-screen {
+                        padding: 12px 60px; 
+                    }
+
+                    // @include respond (sm) {
+                    //   margin-top: 22px;
+                    //   font-size: 16px;
+                    // }
+
+                }
+            }
+        }
+    }
+}

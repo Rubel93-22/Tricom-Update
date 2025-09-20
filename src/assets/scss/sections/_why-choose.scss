@@ -1,0 +1,39 @@
+@use '../utils/' as *;
+.why-choose {
+    &__wrapper {
+        .section-title {
+            margin-bottom: 42px;
+        }
+    }
+
+    &__item {
+        padding: 32px;
+        border-radius: 12px;
+        border: 1px solid #D5DFE6;
+        @include lg-screen {
+            padding: 20px;
+        }
+
+        @include sm-screen {
+            text-align: center;
+        }
+        p {
+            margin-top: 24px;
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include lg-screen {
+            display: grid;
+        }
+
+        .desc-title {
+           
+        }
+    }
+
+    &__icon {}
+}
