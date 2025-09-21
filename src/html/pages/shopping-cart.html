@@ -1,0 +1,238 @@
+<div class="cart-area">
+    <div class="container">
+        <div class="row shopping-cart">
+            <h2 class="section-title">Shopping Cart</h2>
+            <div class="col-xl-8">
+                <div class="cart-container">
+                    <!-- <div class="cart-header">
+                        
+                    </div> -->
+
+                    <div class="cart-row">
+                        <div>
+                            <h5 class="cart-col">Product</h5>
+                            <div class="cart-details">
+                                <img src="assets/img/shopping-cart/1.png" alt="">
+                                <div class="product-content">
+                                    <p>Wi-Fi Multifunction</p>
+                                    <span>$ 1100</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quantity">
+                            <h5 class="cart-col">Quantity</h5>
+                            <div class="quantity-button">
+                                <button class="decrease">-</button>
+                                <input type="text" id="quantity" value="1" style="width: 40px; text-align: center;"
+                                    readonly>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+
+                        <div class="amount">
+                            <h5 class="cart-col">Total</h5>
+                            <span class="amount">$3300</span>
+                        </div>
+
+                        <div class="action">
+                            <h5 class="cart-col">Action</h5>
+                            <button class="delete-btn"><iconify-icon icon="uiw:delete"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#">
+                    <div class="shipping-address">
+                        <h5>Shipping Address</h5>
+                        <div class="shipping-customer-info">
+                            <div class="shipping-customer-item">
+                                <div class="item">
+                                    <label for="">First Name</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="item">
+                                    <label for="">Last Name</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="shipping-customer-item">
+                                <div class="item">
+                                    <label for="">Email</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="item">
+                                    <label for="">Phone</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="address">
+                                <label for="">Address</label>
+                                <input type="text">
+                            </div>
+                            <div class="shipping-customer-item">
+                                <div class="item">
+                                    <label for="">Post Code</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="item">
+                                    <label for="">District</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopping-order-btn">
+                        <a href="#" class="shopping-btn">
+                            <svg class="angle-left" xmlns="http://www.w3.org/2000/svg" width="8" height="14"
+                                viewBox="0 0 8 14" fill="none">
+                                <path d="M6.5 1.5L1.5 7L6.5 12.5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Continue Shopping
+
+                        </a>
+                        <span>Or</span>
+                        <button type="submit" class="order-btn">Place Order <svg class="angle-right" xmlns="http://www.w3.org/2000/svg"
+                                width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                <path d="M1.5 12.5L6.5 7L1.5 1.5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-4">
+                <div class="wrapper-box">
+                    <div class="order-summary box mb-4">
+                        <h5 class="order-summary__title">Order Summary</h5>
+
+                        <div class="promo-section d-flex justify-content-between align-items-center mb-3">
+                            <label for="promoCode" class="promo-Code">Promo Code</label>
+                            <input type="text" id="promoCode" />
+                        </div>
+
+                        <hr />
+
+                        <div class="summary-item d-flex justify-content-between">
+                            <span class="order-summary__label">Subtotal</span>
+                            <span class="order-summary__value">$ 1100</span>
+                        </div>
+                        <hr />
+
+                        <div class="summary-item d-flex justify-content-between">
+                            <span class="order-summary__label">Shipping</span>
+                            <span class="order-summary__value">$ 150</span>
+                        </div>
+                        <hr />
+
+                        <div class="summary-item d-flex justify-content-between">
+                            <span class="order-summary__label">Tax</span>
+                            <span class="order-summary__value">$ 150</span>
+                        </div>
+                        <hr />
+
+                        <div class="summary-item d-flex justify-content-between">
+                            <span class="order-summary__label">Tax</span>
+                            <span class="order-summary__value">$ 150</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-method box mb-4">
+                        <div class="title">
+                            <h5>Payment Method</h5>
+                            <p>Choose your preferred delivery option</p>
+                        </div>
+                        <div class="payment-method-address">
+                            <div class="payment-method-item">
+                                <div class="payment-method-details">
+                                    <input type="radio">
+                                    <div class="payment-method-content">
+                                        <h6>Inside Dhaka</h6>
+                                        <p>Delivery within <br> 1 business days</p>
+                                    </div>
+                                </div>
+
+                                <div class="payment-price">
+                                    <span>$ 70</span>
+                                </div>
+                            </div>
+                            <div class="payment-method-item">
+                                <div class="payment-method-details">
+                                    <input type="radio">
+                                    <div class="payment-method-content">
+                                        <h6>Outside Dhaka</h6>
+                                        <p>Delivery within 2-4 business days</p>
+                                    </div>
+                                </div>
+
+                                <div class="payment-price">
+                                    <span>$150</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-method box">
+                        <div class="title">
+                            <h5>Payment Method</h5>
+                            <p>Choose your preferred delivery option</p>
+                        </div>
+                        <div class="payment-delivery">
+                            <div class="payment-option">
+                                <input type="radio">
+                                <label for="">Cash On Delivery</label>
+                            </div>
+
+                            <div class="payment-option">
+                                <input type="radio">
+                                <label for="">Online payment</label>
+                            </div>
+                        </div>
+                        <div class="payment-card d-flex">
+                            <div class="payment-card-icon"><iconify-icon icon="logos:paypal"></iconify-icon>
+                            </div>
+                            <div class="payment-card-icon"><iconify-icon icon="logos:mastercard"></iconify-icon>
+                            </div>
+                            <div class="payment-card-icon"><iconify-icon icon="logos:visa"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="payment-info">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="payment-info-item">
+                                        <label for="">Card Number</label>
+                                        <input type="number" placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="payment-info-item">
+                                        <label for="">Name On Card</label>
+                                        <input type="text" placeholder="Name on card">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="payment-info-item">
+                                        <label for="">Expiry Date</label>
+                                        <input type="text" placeholder="MM/YY" class="mb-0">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="payment-info-item">
+                                        <label for="">cvv</label>
+                                        <input type="text" placeholder="XXXX" class="mb-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
