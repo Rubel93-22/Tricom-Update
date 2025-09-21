@@ -1,9 +1,11 @@
+@use '../utils/' as *;
+
 .product-details {
     background: rgb(var(--body-bg));
     margin-top: 87px;
 
 
-    // @include respond ('lg') {
+    // @include respond ('lg') { 
     //     padding: 20px;
     // }
 
@@ -247,6 +249,7 @@
             }
         }
     }
+
     .product-reviews {
         padding: 48px 24px;
         margin-top: 36px;
@@ -427,6 +430,7 @@
 
                 .reviews {
                     margin-bottom: 42px;
+
                     .reviews-sort {
                         margin-bottom: 24px;
                     }
@@ -478,12 +482,23 @@
 .product-gallary {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+
+    @include four-xl-screen {
+        flex-direction: column-reverse;
+    }
 }
 
 .thumb-slider {
     margin-top: 0px;
     width: 20%;
+
+    @include four-xl-screen {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+
 
     .slick-slide {
         margin: 0 0 10px 0;
