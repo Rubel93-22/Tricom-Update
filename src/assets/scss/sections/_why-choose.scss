@@ -17,9 +17,6 @@
         @include sm-screen {
             text-align: center;
         }
-        p {
-            margin-top: 24px;
-        }
     }
 
     &__subtitle {
@@ -28,10 +25,6 @@
         gap: 20px;
         @include lg-screen {
             display: grid;
-        }
-
-        .desc-title {
-           
         }
     }
 

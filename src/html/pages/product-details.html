@@ -104,7 +104,7 @@
             </div>
             <section id="product-desc" class="product-description">
                 <div class="product-description__item">
-                    <h4 class="product-description__title">Power & Performance</h4>
+                    <h4 class="product-description__title desc-title">Power & Performance</h4>
                     <p class="product-description__para">The Apple MacBook Pro 14" M3 is equipped with the
                         groundbreaking Apple M3 chip, featuring an 8-core CPU (4 performance + 4 efficiency cores),
                         10-core GPU with hardware-accelerated ray tracing, and a 16-core Neural Engine for fast machine
@@ -114,7 +114,7 @@
                         content creation..</p>
                 </div>
                 <div class="product-description__item">
-                    <h4 class="product-description__title">Stunning Display & Graphics</h4>
+                    <h4 class="product-description__title desc-title">Stunning Display & Graphics</h4>
                     <p class="product-description__para">Experience incredible visuals on the 14.2" Liquid Retina XDR
                         display (3024×1964), with up to 1600 nits peak brightness, 120Hz ProMotion refresh rate, and
                         support for HDR content. The display is factory-calibrated with wide color (P3) and True Tone
@@ -123,7 +123,7 @@
                         design work.</p>
                 </div>
                 <div class="product-description__item">
-                    <h4 class="product-description__title">Immersive Audio, Camera & User Experience</h4>
+                    <h4 class="product-description__title desc-title">Immersive Audio, Camera & User Experience</h4>
                     <p class="product-description__para">Enjoy a studio-like media experience with a six-speaker sound
                         system featuring Dolby Atmos and Spatial Audio. The 1080p FaceTime HD camera ensures clear video
                         calls, while the three-mic array captures your voice with precision and filters out background
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="product-description__item">
-                    <h4 class="product-description__title">Availability & Warranty</h4>
+                    <h4 class="product-description__title desc-title">Availability & Warranty</h4>
                     <p class="product-description__para">Get the original Apple MacBook Pro 14" M3 (8GB RAM, 512GB SSD,
                         Space Gray, #MTL73) from Star Tech in Bangladesh. Available both online and in-store, it comes
                         with a 1-year official warranty. Whether you're a creative professional, developer, or power
@@ -205,7 +205,15 @@
                     </div>
 
                     <div class="write-review">
-                        <button class="write-review__btn">Write a Review</button>
+                        <p class="write-review__para">Review this product</p>
+                        <form action="/action_page.php" class="write-review__form">
+                            <textarea class="write-review__text-area" rows="4" cols="40"></textarea>
+                            <br>
+                            <div class="write-review__btn text-end">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                        <!-- <button class="write-review__btn">Write a Review</button> -->
                     </div>
                 </div>
 
@@ -292,7 +300,7 @@
                         </div>
                     </div>
 
-                    <nav class="d-flex justify-items-center justify-content-between">
+                    <nav class="d-flex justify-items-center justify-content-between d-none">
                         <div class="d-flex justify-content-between flex-fill d-sm-none">
                             <ul class="pagination">
 

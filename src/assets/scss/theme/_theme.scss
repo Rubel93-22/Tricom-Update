@@ -1,4 +1,4 @@
-// @use '../utils' as *;
+@use '../utils' as *;
 // /*-----------------------------------------------------------------------------------
 
 //     Template Name: Trilogy HTML 
@@ -156,6 +156,10 @@ p {
 	font-weight: 400;
 	color: var(--body-color);
 	line-height: 160%;
+
+	@include msm-screen {
+		font-size: 14px;
+	}
 }
 
 
@@ -203,7 +207,7 @@ button:hover {
 }
 
 button:focus {
-	outline: 0; 
+	outline: 0;
 }
 
 .uppercase {
@@ -232,9 +236,7 @@ textarea {
 
 
 
-	&:focus {
-		
-	}
+	&:focus {}
 
 }
 
