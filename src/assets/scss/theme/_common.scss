@@ -182,13 +182,22 @@
   }
 }
 
+.price {
+  color: rgb(var(--heading-color));
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.last-item {
+  margin-bottom: 0px !important;
+}
+
 .desc-title {
   margin-bottom: 20px;
   color: rgb(var(--heading-color));
   font-size: 28px;
   font-weight: 600;
-  line-height: 20px;
-
   @include xl-screen {
     font-size: 26px;
   }

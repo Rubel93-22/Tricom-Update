@@ -7,7 +7,6 @@ $variations: (
   warning,
   success,
   danger) !default;
-
 $transition: all 0.2s ease-in-out;
 //*  Scss variable end  */
 
@@ -15,7 +14,6 @@ $transition: all 0.2s ease-in-out;
   /*=== Variable Color on RGB ===*/
 
   // rgb(var(--body-color)) rbg syntax 
-
 
   //   #FF3F3F 
   --theme-color: 255,
