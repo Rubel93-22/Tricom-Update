@@ -64,7 +64,7 @@
 
 // Medium Small Screen (max-width: 575)
 @mixin msm-screen {
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 575px) { 
     @content;
   }
 }

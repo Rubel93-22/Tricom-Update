@@ -1,74 +1,125 @@
+  @use '../utils/' as *;
+
   .cart-table {
       margin-bottom: 24px;
       padding: 48px 24px;
       border-radius: 12px;
       background: rgb(var(--white));
-      overflow-x: scroll;
+
+      @include md-screen {
+          overflow-x: auto;
+      }
 
       .table {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           border: none !important;
+          border-spacing: 0 20px;
+
+          @include md-screen {
+              width: 1000px;
+          }
 
           thead {
               .table-heading {
                   th {
-                      padding: 0;
-                      padding-bottom: 20px;
+                      padding: 0 0 20px;
                       border: none;
                       text-align: center;
+                      color: rgb(var(--heading-color));
+                      font-size: 16px;
+                      font-weight: 600;
 
                       &:first-child {
                           text-align: left;
-
                       }
-
-                      &:last-child {}
                   }
               }
           }
 
           tbody {
-              margin-top: 20px;
-
               tr {
                   .product-info {
                       display: inline-flex;
                       gap: 10px;
                       align-items: center;
+                      margin-bottom: 20px;
+
+                      .details {
+                          span {
+                              color: rgb(var(--body-color));
+                          }
+                      }
                   }
 
                   td {
-                      padding-left: 0px;
+                      padding: 17px 60px;
                       border: none;
                       text-align: center;
                       vertical-align: middle;
 
+
                       &:first-child {
+                          padding-top: 0px;
+                          padding-bottom: 0px;
+                          padding-left: 0px;
                           text-align: left;
-                          width: 350px;
                       }
-
-
-
                       &:last-child {
+
                           text-align: center;
                       }
-
                       .quantity {
-                          .decrease {
+                          padding: 4px;
+                          background: #F5F5F5;
+                          border-radius: 4px;
+                          display: flex;
+                          justify-content: space-between;
+                          width: 100px;
+                          height: 40px;
+                          align-items: center;
+                          margin: 0 auto;
+
+                          button {
                               width: 28px;
                               height: 28px;
                               border-radius: 4px;
                               background: rgb(var(--border-color));
                           }
 
-                          .increase {
-                              width: 28px;
-                              height: 28px;
-                              border-radius: 4px;
-                              background: rgb(var(--border-color));
+                          input {
+                              color: rgb(var(--body-color));
+                              font-size: 16px;
+                              font-weight: 400;
+                          }
+
+                      }
+
+                      .total {
+                          color: rgb(var(--body-color));
+                          font-size: 16px;
+                          font-weight: 400;
+                      }
+
+                      .action {
+                          width: fit-content;
+                          margin: 0 auto;
+
+                          .delete-btn {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              width: 40px;
+                              height: 40px;
+                              border-radius: 50%;
+                              background: rgb(var(--theme-color));
+
+                              .delete-icon {
+                                  font-size: 19px;
+                                  color: rgb(var(--white));
+                              }
                           }
                       }
+
                   }
               }
           }

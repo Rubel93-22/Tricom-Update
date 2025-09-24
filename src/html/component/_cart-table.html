@@ -1,6 +1,6 @@
 <div class="cart-table">
-    <h2 class="desc-title">Shopping Cart</h2>
-    <table class="table table-responsive">
+    <h2 class="desc-title">@@title</h2>
+    <table class="table">
         <thead>
             <tr class="table-heading">
                 <th>Product</th>
@@ -22,15 +22,36 @@
                 </td>
                 <td>
                     <div class="quantity">
-                        <button class="decrease">-</button>
+                        <button class="decrease"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28"
+                                viewBox="0 0 29 28" fill="none">
+                                <rect x="0.666992" width="28" height="28" rx="4" fill="#D5DFE6" />
+                                <line x1="19.667" y1="14.75" x2="9.66699" y2="14.75" stroke="#656565"
+                                    stroke-width="1.5" />
+                            </svg></button>
                         <input type="text" id="quantity" value="1" style="width: 40px; text-align: center;" readonly="">
-                        <button class="increase">+</button>
+                        <button class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                fill="none">
+                                <rect x="0.666992" width="28" height="28" rx="4" fill="#D5DFE6" />
+                                <line x1="9.66699" y1="14.084" x2="19.667" y2="14.084" stroke="#656565"
+                                    stroke-width="1.5" />
+                                <line x1="14.583" y1="9" x2="14.583" y2="19" stroke="#656565" stroke-width="1.5" />
+                            </svg>
+                        </button>
                     </div>
                 </td>
-                <td>$3300</td>
                 <td>
+                    <div class="total">
+                        $3300
+                    </div>
 
-                    <button class="view-link"><iconify-icon icon="fluent:delete-28-regular"></iconify-icon></button>
+                </td>
+                <td>
+                    <div class="action">
+                        <button class="delete-btn"><iconify-icon class="delete-icon"
+                                icon="fluent:delete-28-regular"></iconify-icon></button>
+                    </div>
+
 
                 </td>
 
@@ -38,7 +59,7 @@
 
             <tr>
                 <td>
-                    <div class="product-info">
+                    <div class="product-info last-item">
                         <img src="assets/img/product-details/2.png" alt="product">
                         <div class="details">
                             <p class="name">Wi-Fi Multifunction</p>
@@ -48,14 +69,35 @@
                 </td>
                 <td>
                     <div class="quantity">
-                        <button class="decrease">-</button>
+                        <button class="decrease"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28"
+                                viewBox="0 0 29 28" fill="none">
+                                <rect x="0.666992" width="28" height="28" rx="4" fill="#D5DFE6" />
+                                <line x1="19.667" y1="14.75" x2="9.66699" y2="14.75" stroke="#656565"
+                                    stroke-width="1.5" />
+                            </svg></button>
                         <input type="text" id="quantity" value="1" style="width: 40px; text-align: center;" readonly="">
-                        <button class="increase">+</button>
+                        <button class="increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                fill="none">
+                                <rect x="0.666992" width="28" height="28" rx="4" fill="#D5DFE6" />
+                                <line x1="9.66699" y1="14.084" x2="19.667" y2="14.084" stroke="#656565"
+                                    stroke-width="1.5" />
+                                <line x1="14.583" y1="9" x2="14.583" y2="19" stroke="#656565" stroke-width="1.5" />
+                            </svg>
+                        </button>
                     </div>
                 </td>
-                <td>$3300</td>
                 <td>
-                    <button class="view-link"><iconify-icon icon="fluent:delete-28-regular"></iconify-icon></button>
+                    <div class="total">
+                        $5500
+                    </div>
+                </td>
+                <td>
+                    <div class="action">
+                        <button class="delete-btn"><iconify-icon class="delete-icon"
+                                icon="fluent:delete-28-regular"></iconify-icon></button>
+                    </div>
+
                 </td>
             </tr>
         </tbody>
