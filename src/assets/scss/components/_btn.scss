@@ -1,1 +1,21 @@
 @use '../utils/' as *;
+
+.save-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    border-radius: 4px;
+    padding: 17px 38px;
+    color: #FFF;
+    background: rgb(var(--heading-color));
+}
+
+.add-more-btn {
+    font-size: 16px;
+    border-radius: 4px;
+    line-height: 12px;
+    font-weight: 600;
+    color: rgb(var(--heading-color));
+    padding: 17px 38px;
+    border: 1px solid rgb(var(--heading-color)) !important;
+}
