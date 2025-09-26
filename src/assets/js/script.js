@@ -245,7 +245,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '.main-slider',
     focusOnSelect: true,
-    vertical: true,
+    // vertical: true,
     arrows: false,
     responsive: [
       {
