@@ -1,0 +1,30 @@
+@use '../utils/' as *;
+.pagination {
+    gap: 10px;
+    .page-item {
+
+        .page-link {
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            color: rgb(var(--heading-color));
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 5px;
+            padding: 14px;
+             border: 1px solid rgb(var(--body-color));
+             @include msm-screen {
+                width: fit-content;
+             }
+            &.active {
+                color: #fff;
+                background: rgb(var(--heading-color));
+            }
+           
+        }
+
+    }
+}
+
+

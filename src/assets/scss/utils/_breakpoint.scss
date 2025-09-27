@@ -17,7 +17,7 @@
 //     $query: "screen and (max-width: #{map-get($breakpoints, $size)})";
 
 //     @if $orientation != null {
-//       $query: "#{$query} and (orientation: #{$orientation})";
+//       $query: "#{$query} and (orientation: #{$orientation})"; 
 //     }
 
 //     @media #{$query} {

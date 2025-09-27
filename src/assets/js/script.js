@@ -230,40 +230,42 @@ $(document).ready(function () {
     ]
   });
 
-  // Main Slider
-  $('.main-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.thumb-slider'
-  });
+// Main Slider
+$('.main-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  infinite: true,
+  asNavFor: '.thumb-slider'
+});
 
-  // Thumbnail Slider
-  $('.thumb-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.main-slider',
-    focusOnSelect: true,
-    // vertical: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 992, // Tablet
-        settings: {
-          vertical: false,
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 576, // Mobile
-        settings: {
-          vertical: false,
-          slidesToShow: 2
-        }
+// Thumbnail Slider
+$('.thumb-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.main-slider',
+  focusOnSelect: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 992, // Tablet
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+        centerMode: true
       }
-    ]
-  });
+    },
+    {
+      breakpoint: 576, // Mobile
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+        centerMode: true
+      }
+    }
+  ]
+});
+
 
 });
 

@@ -105,6 +105,9 @@
 .section-spacing { 
   margin-top: 83px;
   padding: 96px 0;
+  @include msm-screen {
+    padding: 40px 0;
+  }
 }
 .section-title {
   font-size: 36px;

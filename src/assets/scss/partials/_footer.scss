@@ -18,17 +18,6 @@
                 }
             }
         }
-
-        .footer-title {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 16px;
-            font-size: 28px;
-
-            @include msm-screen {
-                font-size: 16px;
-            }
-        }
         .footer-list {
             li {
                 margin-bottom: 16px;

@@ -1,7 +1,7 @@
 @use '../utils/' as *;
 
 .product-details {
-    background: rgb(var(--body-bg));
+    background: rgb(var(--body-bg)); 
     margin-top: 87px;
 
     &__single-product {
@@ -28,12 +28,13 @@
                             margin-right: 16px;
 
                             &:last-child {
-                                margin-right: 0px;
+                                margin-right: 0px; 
                             }
 
                             img {
                                 width: 100%;
                                 margin: 0px;
+                                cursor: pointer;
                             }
                         }
                     }
