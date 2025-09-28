@@ -15,11 +15,13 @@
                     font-family: var(--heading-font);
                     font-size: 28px;
                     font-weight: 600;
-                    line-height: 160%;
 
                     @include sm-screen {
                         font-size: 26px;
                         line-height: normal;
+                    }
+                    @include mobile-screen {
+                        font-size: 24px;
                     }
                 }
 
@@ -35,11 +37,13 @@
                         line-height: normal;
                         letter-spacing: 1.6px;
                     }
+                    @include mobile-screen {
+                        font-size: 14px;
+                    }
                 }
             }
-
             .btn-shop {
-                padding: 18px 32px;
+                padding: 14px 42px;
                 display: inline-block;
                 background: rgb(var(--theme-color));
                 color: rgb(var(--white));
@@ -47,24 +51,29 @@
                 font-family: var(--body-font);
                 font-size: 16px;
                 font-weight: 600;
-                line-height: 160%;
                 border-radius: 4px;
 
                 @include sm-screen {
                     padding: 10px 50px;
                 }
+                @include mobile-screen {
+                    font-size: 14px;
+                }
             }
 
             .hero-title {
                 font-size: 60px;
-                margin: 20px 0;
-
+                font-weight: 600;
+                color: rgb(var(--heading-color));
+                margin-top: 5px;
+                margin-bottom: 30px;
+                line-height: 100%;
                 @include md-screen {
                     font-size: 42px;
                 }
 
                 @include mobile-screen {
-                    font-size: 38px;
+                    font-size: 36px;
                 }
             }
         }

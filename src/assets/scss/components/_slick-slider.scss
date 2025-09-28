@@ -1,10 +1,10 @@
 @use '../utils/' as *;
 
 .slick-slider {
-    margin-top: 42px;
+    margin-top: 22px;
     position: relative;
-    @include sm-screen {
-        margin-top: 30px;
+    @include sm-screen { 
+      
     }
     .slick-prev,
     .slick-next {
@@ -56,10 +56,10 @@
     }
 
     .slick-prev {
-        top: -79px;
+        top: -58px;
         right: 62px;
         @include sm-screen {
-            left: -35px;
+            left: -25px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -70,11 +70,11 @@
     }
 
     .slick-next {
-        top: -79px;
+        top: -58px;
         right: 20px;
 
         @include sm-screen {
-            right: -35px;
+            right: -25px;
             top: 50%;
             transform: translateY(-50%);
         }

@@ -13,14 +13,16 @@
         }
 
         .trending-box {
-            margin-top: 42px;
+            margin-top: 30px;
 
             @include sm-screen {
                 margin-top: 30px;
             }
 
             .trending-content {
-
+                .desc-title {
+                    line-height: 20px;
+                }
                 .rating-star {
                     display: flex;
                     gap: 10px;
@@ -46,7 +48,7 @@
                 }
 
                 p {
-                    margin: 20px 0;
+                    margin-top: 10px;
                     color: #656565;
                     font-size: 16px;
                     font-weight: 400;
@@ -92,12 +94,12 @@
                     font-size: 16px;
                     font-weight: 600;
                     line-height: 160%;
-                    margin-top: 42px;
+                    margin-top: 30px;
                     border-radius: 4px;
                     padding: 18px 82px;
                     font-size: 16px;
                     font-weight: 600;
-                    line-height: 160%;
+                    line-height: 12px;
                     background: rgb(var(--theme-color));
 
                     @include sm-screen {

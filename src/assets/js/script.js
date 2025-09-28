@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   $('.category-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -252,7 +251,7 @@ $(document).ready(function () {
         settings: {
           vertical: false,
           slidesToShow: 3,
-          centerMode: true
+          
         }
       },
       {
@@ -260,7 +259,7 @@ $(document).ready(function () {
         settings: {
           vertical: false,
           slidesToShow: 2,
-          centerMode: true
+          
         }
       }
     ]

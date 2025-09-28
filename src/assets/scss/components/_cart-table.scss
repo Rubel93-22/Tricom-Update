@@ -2,14 +2,12 @@
 
   .cart-table {
       margin-bottom: 24px;
-      padding: 48px 24px;
+      padding: 40px 24px;
       border-radius: 12px;
-      background: rgb(var(--white));
-
+      background: rgb(var(--white)); 
       @include md-screen {
           overflow-x: auto;
       }
-
       .table {
           margin-bottom: 0;
           border: none !important;
@@ -62,6 +60,7 @@
                           padding-top: 0px;
                           padding-bottom: 0px;
                           padding-left: 0px;
+                          padding-right: 0px;
                           text-align: left;
                       }
                       &:last-child {

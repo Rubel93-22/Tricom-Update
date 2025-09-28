@@ -1,13 +1,14 @@
+@use '../utils/' as *;
+
 .cart-area {
-    padding-top: 96px;
-    margin-top: 84px;
-    padding-bottom: 96px;
     form {
         .shipping-address {
-            padding: 48px 24px;
+            padding: 40px 24px;
             border-radius: 12px;
             background-color: #fff;
-
+            @include lg-screen {
+                margin-bottom: 24px;
+            }
             .options {
                 margin-bottom: 28px;
                 display: flex;
@@ -67,7 +68,6 @@
             margin-top: 42px;
             display: flex;
             justify-content: center;
-
             .shopping-btn {
                 padding: 18px 26px;
                 color: rgb(var(--white));
@@ -108,10 +108,9 @@
 
     .box {
         margin-bottom: 24px;
-        padding: 48px 24px;
+        padding: 40px 24px;
         border-radius: var(--border-radius);
         background: rgb(var(--white));
-
         &:last-child {
             margin-bottom: 0px;
         }
@@ -184,7 +183,7 @@
                         }
 
                         &__desc {
-                            line-height: 12px;
+                           
                         }
                     }
                 }
@@ -214,6 +213,7 @@
         .payment-info {
             .payment-info-item {
                 margin-bottom: 24px;
+              
 
                 label {
                     margin-bottom: 16px;
@@ -239,7 +239,7 @@
 
 
         .payment-delivery {
-            display: grid;
+            display: grid; 
             gap: 8px;
 
             .payment-option {

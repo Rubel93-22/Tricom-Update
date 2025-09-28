@@ -173,7 +173,6 @@
             @include lg-screen {
                 margin-left: 0px !important;
             }
-
             .category-product {
                 margin-bottom: 42px;
                 display: grid;
@@ -191,6 +190,7 @@
                 }
 
                 @include md-screen {
+                    margin-bottom: 30px;
                     grid-template-columns: repeat(2, 1fr);
 
                 }

@@ -1,11 +1,11 @@
 @use '../utils/' as *;
 
 .product-details {
-    background: rgb(var(--body-bg)); 
+    background: rgb(var(--body-bg));
     margin-top: 87px;
 
     &__single-product {
-        padding: 96px 0;
+        margin-bottom: 24px;
 
         .product-gallary {
             .main-slider {
@@ -28,7 +28,7 @@
                             margin-right: 16px;
 
                             &:last-child {
-                                margin-right: 0px; 
+                                margin-right: 0px;
                             }
 
                             img {
@@ -43,14 +43,22 @@
         }
 
         .product-info {
+            @include md-screen {
+                margin-top: 30px;
+            }
+
             .product-heading {
                 color: rgb(var(--heading-color));
                 font-size: 28px;
-
                 font-weight: 600;
-                line-height: 160%;
 
-
+                @include sm-screen {
+                    margin: 10px 0;
+                    font-size: 26px;
+                }
+                @include mobile-screen {
+                    font-size: 22px;
+                }
             }
 
             &__desc {
@@ -137,11 +145,15 @@
 
             &__quantity-control {
                 margin: 16px 0;
-                display: flex;
+                display: inline-flex;
                 gap: 16px;
 
+                @include xsm-screen {
+                    flex-direction: column;
+                }
+
                 &--btn {
-                    display: flex;
+                    display: inline-flex;
                     align-items: center;
                     padding: 8px;
                     border-radius: 4px;
@@ -162,6 +174,7 @@
                         display: inline-block;
                         padding: 16px 72px;
                         border-radius: 4px;
+                        line-height: 12px;
                         border: 1px solid #302f2f !important;
                     }
                 }
@@ -169,18 +182,20 @@
 
             &__cart-btn {
                 .add-to-cart {
-
                     display: inline-flex;
                     align-items: center;
                     gap: 8px;
                     font-size: 16px;
                     font-weight: 600;
-                    line-height: 160%;
+                    line-height: 12px;
                     color: #fff;
                     border-radius: 4px;
                     padding: 16px 144px;
                     background: rgb(var(--theme-color));
 
+                    @include xsm-screen {
+                        padding: 16px 77px;
+                    }
                 }
             }
 
@@ -201,7 +216,6 @@
             }
 
             &__para {
-                line-height: 12px;
                 margin: 20px 0;
             }
 
@@ -218,12 +232,14 @@
         }
     }
 
-
-
     &__content {
         border-radius: var(--border-radius);
         background: rgb(var(--white));
         padding: 48px 24px;
+
+        @include lg-screen {
+            padding: 35px 24px;
+        }
 
         .product-description {
             display: grid;
@@ -234,30 +250,33 @@
             }
 
             @include sm-screen {
-                gap: 30px;
+                gap: 15px;
             }
 
-            @include msm-screen {
-                gap: 20px;
+            &__item {
+                .desc-title {
+                    margin-bottom: 10px;
+                }
             }
 
-            &__item {}
+
+
+
 
             &__para {}
 
         }
+
     }
 
     &__content-nav {
-        margin-bottom: 48px;
+
 
         @include sm-screen {
-            margin-bottom: 32px;
+            margin-bottom: 20px;
         }
 
-        @include msm-screen {
-            margin-bottom: 25px;
-        }
+        @include msm-screen {}
 
         .list {
             display: flex;
@@ -294,9 +313,11 @@
     .product-reviews {
         padding: 48px 24px;
         margin-top: 36px;
-        margin-bottom: 96px;
         background: #fff;
         border-radius: var(--border-radius);
+        @include sm-screen {
+            padding: 35px 24px;
+        }
 
         &__top {
             .rating-box {
@@ -487,10 +508,13 @@
                 margin-top: 42px;
 
                 .reviews {
-                    margin-bottom: 42px;
+
 
                     .reviews-sort {
                         margin-bottom: 24px;
+                        @include sm-screen {
+                            margin-bottom: 20px;
+                        }
                     }
 
                     &__select {
@@ -529,6 +553,9 @@
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 160%;
+                            @include sm-screen {
+                                margin-top: 5px;
+                            }
                         }
                     }
                 }

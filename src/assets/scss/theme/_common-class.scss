@@ -86,7 +86,7 @@
 // }
 
 :root {
-  --slider-padding: 48px;
+  --slider-padding: 40px;
   --border-radius: 12px;
 }
 
@@ -100,15 +100,29 @@
 
 .section-gap {
   margin-bottom: 48px;
+
+  @include msm-screen {
+    margin-bottom: 35px;
+  }
+
+  @include xsm-screen {
+    margin-bottom: 25px;
+  }
 }
 
-.section-spacing { 
+.section-spacing {
   margin-top: 83px;
   padding: 96px 0;
+
+  @include sm-screen {
+    padding: 60px 0;
+  }
+
   @include msm-screen {
     padding: 40px 0;
   }
 }
+
 .section-title {
   font-size: 36px;
   color: rgb(var(--heading-color));
@@ -121,6 +135,9 @@
     font-size: 30px;
   }
 }
+
+
+
 .box-padding {
   border-radius: 12px;
   padding: 48px 24px;
@@ -162,6 +179,8 @@
   line-height: 160%;
 }
 
+
+
 .add-to-cart-btn {
   margin-top: 16px;
 
@@ -175,7 +194,7 @@
     color: rgb(var(--white));
     font-size: 16px;
     font-weight: 600;
-    line-height: 160%;
+    line-height: 12px;
     border-radius: 4px;
     background: rgb(var(--theme-color));
 
@@ -202,6 +221,9 @@
 
 .last-item {
   margin-bottom: 0px !important;
+  @include lg-screen {
+    margin-bottom: 24px !important;
+  }
 }
 
 .desc-title {
@@ -209,6 +231,7 @@
   color: rgb(var(--heading-color));
   font-size: 28px;
   font-weight: 600;
+
   @include xl-screen {
     font-size: 26px;
   }
