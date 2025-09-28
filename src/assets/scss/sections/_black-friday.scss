@@ -98,45 +98,78 @@
  //  }
 
  .black-friday {
-     background: #000;
+     margin: 70px 0;
+     background: rgb(var(--heading-color));
 
      &__img-1 {
          margin: -32px;
+
+         img {
+             width: auto;
+         }
      }
 
      &__content {
+         margin-left: 24px;
          display: flex;
          align-items: center;
      }
 
      &__title {
-         font-size: 80px;
-         font-weight: 900;
-         text-transform: uppercase;
+
          line-height: 1;
+
+         .black {
+             letter-spacing: -9px;
+         }
+
+         .friday {
+             letter-spacing: -15px;
+         }
 
          Span {
              display: block;
-             transform: rotate(-10deg) skewX(-10deg);
-             font-size: 90px;
-             letter-spacing: 2px;
+             transform: rotate(-19deg) skewX(-10deg);
+             font-size: 110px;
+             font-weight: 900;
+
 
              &:first-child {
                  color: #fff;
              }
 
              &:last-child {
-                 -webkit-text-stroke: 2px #fff;
+                 font-family: sans-serif;
+                 -webkit-text-stroke: 3px #fff;
                  color: transparent;
+                 margin-left: 107px;
+                 margin-top: -55px;
              }
          }
      }
 
      &__offer {
-         p {
+         margin-left: 24px;
+
+
+
+         .shop-now-btn {
+             display: inline-block;
+             padding: 18px 81px;
+             background: rgb(var(--theme-color));
              color: #fff;
              font-size: 16px;
              font-weight: 600;
+             line-height: 12px;
+             border-radius: 4px;
          }
+     }
+
+     &__offer-text {
+         color: #fff;
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 12px;
+         margin-bottom: 16px;
      }
  }
