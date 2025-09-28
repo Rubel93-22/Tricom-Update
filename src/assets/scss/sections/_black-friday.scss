@@ -1,96 +1,142 @@
  @use 'utils' as *;
 
+ //  .black-friday {
+ //      //  position: relative;
+ //      margin: 100px 0;
+ //      display: flex;
+
+ //      background: rgb(var(--heading-color));
+ //      color: #fff;
+
+ //      .img-one {
+ //          //  position: absolute;
+ //          //  top: -30px;
+ //      }
+
+ //      &__inner {}
+
+ //      // @include respond ('xs') {
+ //      //   margin-top: 80px;
+ //      // }
+
+ //      // @include respond ('xxs') {
+ //      //   margin-top: 50px;
+ //      // }
+
+ //      .black-friday-banner {
+
+
+ //          //   @include respond(sm) {
+ //          //     flex-direction: column;
+ //          //     gap: 10px;
+ //          //   }
+
+
+
+ //          .black-friday-title {
+ //              margin-left: 24px;
+ //              transform: rotate(340deg);
+ //              text-align: left;
+ //              line-height: 1;
+
+ //              // @include respond(sm) {
+ //              //   text-align: center;
+ //              //   transform: rotate(0deg);
+ //              // }
+
+ //              .black {
+ //                  color: #FFF;
+ //                  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.43);
+ //                  font-size: 64px;
+ //                  font-weight: 900;
+
+ //                  //   @include respond(sm) {
+ //                  //     font-size: 44px;
+ //                  //   }
+ //              }
+
+ //              .friday {
+ //                  margin-top: -21px;
+ //                  margin-left: 65px;
+ //                  font-size: 64px;
+ //                  font-weight: 900;
+ //                  color: transparent;
+ //                  -webkit-text-stroke: 2px #fff;
+ //                  text-stroke: 2px #fff;
+
+ //                  //   @include respond(sm) {
+ //                  //     margin-top: 0px;
+ //                  //     margin-left: 0px;
+ //                  //     font-size: 44px;
+ //                  //   }
+ //              }
+ //          }
+
+ //          .black-friday-subtext {
+ //              margin-bottom: 16px;
+ //              font-size: 16px;
+ //              font-weight: 600;
+ //              color: #fff;
+ //              text-transform: lowercase;
+ //              line-height: 160%;
+ //              // @include respond (sm) {
+ //              //   font-size: 14px;
+ //              // }
+ //          }
+
+ //          .shop-now-btn {
+ //              width: 240px;
+ //              background: rgb(var(--primary));
+ //              color: #fff;
+ //              font-weight: 600;
+ //              padding: 18px 12px;
+ //              border-radius: 4px;
+ //              border: none;
+ //              transition: 0.3s ease;
+ //          }
+ //      }
+ //  }
+
  .black-friday {
-    margin: 100px 0;
-    display: flex;
+     background: #000;
 
-     background: rgb(var(--heading-color));
-     color: #fff;
-
-     &__inner {
-        display: flex;
+     &__img-1 {
+         margin: -32px;
      }
 
-     // @include respond ('xs') {
-     //   margin-top: 80px;
-     // }
-
-     // @include respond ('xxs') {
-     //   margin-top: 50px;
-     // }
-
-     .black-friday-banner {
-      
+     &__content {
          display: flex;
          align-items: center;
-         justify-content: end;
-         //   @include respond(sm) {
-         //     flex-direction: column;
-         //     gap: 10px;
-         //   }
+     }
 
-   
+     &__title {
+         font-size: 80px;
+         font-weight: 900;
+         text-transform: uppercase;
+         line-height: 1;
 
-         .black-friday-title {
-             margin-left: 24px;
-             transform: rotate(340deg);
-             text-align: left;
-             line-height: 1;
+         Span {
+             display: block;
+             transform: rotate(-10deg) skewX(-10deg);
+             font-size: 90px;
+             letter-spacing: 2px;
 
-             // @include respond(sm) {
-             //   text-align: center;
-             //   transform: rotate(0deg);
-             // }
-
-             .black {
-                 color: #FFF;
-                 text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.43);
-                 font-size: 64px;
-                 font-weight: 900;
-
-                 //   @include respond(sm) {
-                 //     font-size: 44px;
-                 //   }
+             &:first-child {
+                 color: #fff;
              }
 
-             .friday {
-                 margin-top: -21px;
-                 margin-left: 65px;
-                 font-size: 64px;
-                 font-weight: 900;
-                 color: transparent;
+             &:last-child {
                  -webkit-text-stroke: 2px #fff;
-                 text-stroke: 2px #fff;
-
-                 //   @include respond(sm) {
-                 //     margin-top: 0px;
-                 //     margin-left: 0px;
-                 //     font-size: 44px;
-                 //   }
+                 color: transparent;
              }
          }
+     }
 
-         .black-friday-subtext {
-             margin-bottom: 16px;
+     &__offer {
+         p {
+             color: #fff;
              font-size: 16px;
              font-weight: 600;
-             color: #fff;
-             text-transform: lowercase;
-             line-height: 160%;
-             // @include respond (sm) {
-             //   font-size: 14px;
-             // }
-         }
-
-         .shop-now-btn {
-             width: 240px;
-             background: rgb(var(--primary));
-             color: #fff;
-             font-weight: 600;
-             padding: 18px 12px;
-             border-radius: 4px;
-             border: none;
-             transition: 0.3s ease;
          }
      }
  }

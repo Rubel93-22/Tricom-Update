@@ -1,4 +1,5 @@
 @use '../utils/' as *;
+
 .footer-area {
     background: rgb(var(--white));
 
@@ -18,18 +19,21 @@
                 }
             }
         }
+
         .footer-list {
             li {
                 margin-bottom: 16px;
 
-             
+
 
                 @include sm-screen {
                     text-align: center;
                 }
+
                 p {
                     text-align: left;
                 }
+
                 .footer-link {
                     display: flex;
                     gap: 10px;
@@ -42,12 +46,18 @@
             }
         }
 
+        .desc-title {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .footer-subcription {
-         
-          
+
+
             @include msm-screen {
                 margin-top: 0 !important;
             }
+
             .footer-social-icons {
                 display: flex;
                 gap: 16px;
