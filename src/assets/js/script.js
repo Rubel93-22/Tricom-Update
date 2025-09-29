@@ -251,7 +251,7 @@ $(document).ready(function () {
         settings: {
           vertical: false,
           slidesToShow: 3,
-          
+
         }
       },
       {
@@ -259,7 +259,7 @@ $(document).ready(function () {
         settings: {
           vertical: false,
           slidesToShow: 2,
-          
+
         }
       }
     ]
@@ -277,6 +277,43 @@ window.addEventListener('scroll', function () {
     header.classList.remove('sticky');
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select wrappers that might contain quantity controls
+  const wrappers = document.querySelectorAll('.product-info__quantity-control--btn, .quantity');
+
+  wrappers.forEach(container => {
+    const decreaseBtn = container.querySelector('.decrease');
+    const increaseBtn = container.querySelector('.increase');
+    const quantityInput = container.querySelector('input');
+
+    if (!quantityInput || !decreaseBtn || !increaseBtn) return;
+
+    const getVal = () => {
+      const n = parseInt(quantityInput.value, 10);
+      return Number.isNaN(n) ? 0 : n;
+    };
+
+    decreaseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      let v = getVal();
+      if (v > 1) {
+        quantityInput.value = v - 1;
+        quantityInput.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    });
+
+    increaseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      let v = getVal();
+      quantityInput.value = v + 1;
+      quantityInput.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+  });
+});
+
+
 
 // offcanvas price range slider js
 
@@ -378,25 +415,6 @@ rangeInput.forEach((input) => {
     }
   });
 });
-
-
-// input increase/ decrease
-const decreaseBtn = document.querySelector(".decrease");
-const increaseBtn = document.querySelector(".increase");
-const quantityInput = document.getElementById("quantity");
-
-decreaseBtn.addEventListener("click", () => {
-  let value = parseInt(quantityInput.value);
-  if (value > 1) {
-    quantityInput.value = value - 1;
-  }
-});
-
-increaseBtn.addEventListener("click", () => {
-  let value = parseInt(quantityInput.value);
-  quantityInput.value = value + 1;
-});
-
 
 const toggles = document.querySelectorAll('.desc-title');
 

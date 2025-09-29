@@ -1,0 +1,29 @@
+@use '../utils/' as *;
+.order-track-area {
+    margin-top: 83px;
+    padding: 96px 0;
+    text-align: center;
+
+    .desc-title {
+        @include msm-screen {
+            margin-bottom: 20px;
+            white-space: nowrap;
+        }
+    }
+    .search-box {
+        background: #fff;
+        padding: 16px 25px;
+        display: flex;
+        align-items: center;
+        height: 52px;
+        border-radius: 8px;
+        input {
+            &::placeholder {
+                color: rgb(var(--body-color));
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+    }
+}

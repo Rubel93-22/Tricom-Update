@@ -5,13 +5,11 @@
                 @@include('html/component/_cart-table.html', {
                 "title": "Shopping Cart"
                 })
-
-
                 <form action="#">
                     <div class="shipping-address">
                         <h5 class="desc-title">Shipping Address</h5>
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "First Name"
@@ -19,7 +17,7 @@
 
                             </div>
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "Last Name"
@@ -27,7 +25,7 @@
 
                             </div>
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "Email"
@@ -35,7 +33,7 @@
 
                             </div>
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "Phone"
@@ -43,14 +41,14 @@
 
                             </div>
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "Post Code"
                                 })
 
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
 
                                 @@include('html/component/_form.html', {
                                 "label": "District"
@@ -58,7 +56,7 @@
 
                             </div>
 
-                               <div class="col-xl-12">
+                            <div class="col-xl-12">
                                 <div class="address">
                                     <label for="">Address</label>
                                     <input type="text">
@@ -66,25 +64,28 @@
                             </div>
                             <div class="shopping-order-btn">
                                 <a href="#" class="shopping-btn">
-                                    <svg class="angle-left" xmlns="http://www.w3.org/2000/svg" width="8" height="14"
-                                        viewBox="0 0 8 14" fill="none">
-                                        <path d="M6.5 1.5L1.5 7L6.5 12.5" stroke="white" stroke-width="2"
-                                            stroke-linecap="round" />
-                                    </svg>
+                                    <span>
+                                        <svg class="angle-left" xmlns="http://www.w3.org/2000/svg" width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none">
+                                            <path d="M6.5 1.5L1.5 7L6.5 12.5" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
                                     Continue Shopping
-
                                 </a>
-                                <span>Or</span>
-                                <button type="submit" class="order-btn">Place Order <svg class="angle-right"
-                                        xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
-                                        fill="none">
-                                        <path d="M1.5 12.5L6.5 7L1.5 1.5" stroke="white" stroke-width="2"
-                                            stroke-linecap="round" />
-                                    </svg></button>
+                                <span class="or">Or</span>
+                                <button type="submit" class="shopping-btn order-btn">Place Order
+                                    <span>
+                                        <svg class="angle-right" xmlns="http://www.w3.org/2000/svg" width="8"
+                                            height="14" viewBox="0 0 8 14" fill="none">
+                                            <path d="M1.5 12.5L6.5 7L1.5 1.5" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+
+                                </button>
                             </div>
                         </div>
-
-
                 </form>
             </div>
 
@@ -204,25 +205,25 @@
                 </div>
                 <div class="payment-info">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 col-lg-6 col-md-6">
                             <div class="payment-info-item">
                                 <label for="">Card Number</label>
                                 <input type="number" placeholder="XXXX XXXX XXXX XXXX">
                             </div>
                         </div>
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 col-lg-6 col-md-6">
                             <div class="payment-info-item">
                                 <label for="">Name On Card</label>
                                 <input type="text" placeholder="Name on card">
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="payment-info-item last-item">
                                 <label for="">Expiry Date</label>
                                 <input type="text" placeholder="MM/YY" class="mb-0">
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="payment-info-item last-item">
                                 <label for="">cvv</label>
                                 <input type="text" placeholder="XXXX" class="mb-0">

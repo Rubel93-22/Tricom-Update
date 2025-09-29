@@ -7,7 +7,7 @@
 //   sm: 767px,
 //   md: 991px,
 //   lg: 1199px, 
-//   xl: 1399px,
+//   xl: 1399px, 
 //   xxl: 1599px
 // );
 
@@ -40,7 +40,7 @@
   @media all and (orientation: portrait) {
     @content;
   }
-}
+} 
 
 @mixin mobile-screen {
   @media screen and (min-width: 320px) and (max-width: 375px) { 

@@ -98,11 +98,40 @@
  //  }
 
  .black-friday {
-     margin: 70px 0;
+     margin: 48px 0;
      background: rgb(var(--heading-color));
+
+     @include md-screen {
+        padding-top: 30px;
+     }
+     @include msm-screen {
+        padding-bottom: 30px;
+     }
+
+     &__desc {
+         justify-content: center;
+     }
+
+     &__image-1 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     &__image-2 {
+         display: flex;
+         justify-content: center;
+         @include msm-screen {
+            display: none;
+         }
+     }
 
      &__img-1 {
          margin: -32px;
+
+         @include four-xl-screen {
+             margin: 0px;
+         }
 
          img {
              width: auto;
@@ -113,37 +142,55 @@
          margin-left: 24px;
          display: flex;
          align-items: center;
+
+         @include four-xl-screen {
+             margin-left: 0px;
+             flex-direction: column;
+         }
      }
 
      &__title {
-
          line-height: 1;
 
-         .black {
-             letter-spacing: -9px;
-         }
-
-         .friday {
-             letter-spacing: -15px;
+         @include four-xl-screen {
+             text-align: center;
          }
 
          Span {
+             font-family: var(--heading-font);
              display: block;
              transform: rotate(-19deg) skewX(-10deg);
              font-size: 110px;
              font-weight: 900;
+             @include four-xl-screen {
+                 font-size: 65px;
+                 transform: none;
+             }
 
-
+             @include lg-screen {
+                font-size: 60px;
+             }
              &:first-child {
                  color: #fff;
+                 letter-spacing: -9px;
+
+                 @include four-xl-screen {
+                     letter-spacing: 0px;
+                 }
              }
 
              &:last-child {
-                 font-family: sans-serif;
                  -webkit-text-stroke: 3px #fff;
                  color: transparent;
                  margin-left: 107px;
-                 margin-top: -55px;
+                 margin-top: -50px;
+                 letter-spacing: -6px;
+
+                 @include four-xl-screen {
+                     margin-left: 0px;
+                     margin-top: 0px;
+                     letter-spacing: 0px;
+                 }
              }
          }
      }
@@ -151,7 +198,10 @@
      &__offer {
          margin-left: 24px;
 
-
+         @include four-xl-screen {
+             margin-top: 10px;
+             margin-left: 0px;
+         }
 
          .shop-now-btn {
              display: inline-block;
@@ -171,5 +221,9 @@
          font-weight: 600;
          line-height: 12px;
          margin-bottom: 16px;
+
+         @include four-xl-screen {
+             text-align: center;
+         }
      }
  }
