@@ -1,51 +1,60 @@
-<div class="dashboard-area">
+<div class="dashboard-area section-spacing">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-lg-9">
+            <div class="col-xl-3 section-gap">
                 @@include('html/component/_common-dashboard.html')
             </div>
-
-            <div class="col-xl-9 col-lg-9">
-                <div class="dashboard-content">
-                    <div class="widget-box">
-                        <div class="widget">
+            <div class="col-xl-9">
+                <div class="row widget-wrapper section-gap">
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6 mb-24">
+                        <div class="widget" style="background: #0062A2;"> 
                             <h5 class="desc-title">All Orders</h5>
                             <p>3 Items</p>
                         </div>
+                    </div>
 
-                        <div class="widget">
-                            <h5 class="desc-title">Orders Received</h5>
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6 mb-24">
+                        <div class="widget" style="background: #6B7B3E;">
+                            <h5 class="desc-title">Orders Received </h5>
                             <p>3 Items</p>
                         </div>
+                    </div>
 
-                        <div class="widget">
+
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6 mb-24">
+                        <div class="widget" style="background: #00582F">
                             <h5 class="desc-title">To Review</h5>
                             <p>3 Items</p>
                         </div>
+                    </div>
 
-                        <div class="widget">
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6 mb-sm-24">
+                        <div class="widget" style="background: #FDC040;">
                             <h5 class="desc-title">To Pay</h5>
                             <p>3 Items</p>
                         </div>
-
-                        <div class="widget">
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6 mb-sm-24">
+                        <div class="widget" style="background: #3BB77E;">
                             <h5 class="desc-title">To Ship</h5>
                             <p>3 Items</p>
                         </div>
-
-                        <div class="widget">
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-lg-6 col-md-6">
+                        <div class="widget" style="background: #FF3F3F;">
                             <h5 class="desc-title">Cancel/Return</h5>
                             <p>3 Items</p>
                         </div>
                     </div>
-                    @@include('html/component/_order-table.html', {
-                    "title": "Recent orders"
-                    })
-
-                    @@include('html/component/_cart-table.html', {
-                    "title": "Recent Wishlist"
-                    })
                 </div>
+                @@include('html/component/_order-table.html', {
+                "title": "Recent orders"
+                })
+
+                @@include('html/component/_cart-table.html', {
+                "title": "Recent Wishlist"
+                })
+
             </div>
         </div>
     </div>

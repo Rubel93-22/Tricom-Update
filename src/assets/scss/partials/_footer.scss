@@ -49,6 +49,9 @@
         .desc-title {
             display: flex;
             justify-content: space-between;
+            @include msm-screen {
+                font-size: 18px;
+            }
         }
 
         .footer-subcription {

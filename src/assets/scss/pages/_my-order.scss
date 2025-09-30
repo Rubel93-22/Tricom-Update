@@ -1,7 +1,10 @@
 .my-order {
-    margin-top: 83px;
-    padding: 96px 0;
     .desc-title {
         display: none;
+    }
+    .orders {
+        &.section-gap {
+            margin-bottom: 0px;
+        }
     }
 }

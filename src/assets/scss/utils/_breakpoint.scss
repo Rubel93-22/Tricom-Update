@@ -30,7 +30,7 @@
 
 //Mobile Landscape
 @mixin landscape {
-  @media all and (orientation: landscape) {
+  @media all and (orientation: landscape) { 
     @content;
   }
 }

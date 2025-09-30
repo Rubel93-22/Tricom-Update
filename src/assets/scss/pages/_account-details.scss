@@ -2,8 +2,17 @@
 
  .account-details-area {
      .account-details-info {
-         padding: 35px;
+         padding: 40px 24px;
          border-radius: 10px;
-         background: #FFF;
+         background: #FFF; 
+         .save-btn {
+            margin-top: 42px;
+            @include msm-screen {
+                margin-top: 35px;
+            }
+            @include xsm-screen {
+                margin-top: 25px;
+            }
+         }
      }
  }

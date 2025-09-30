@@ -135,11 +135,23 @@
   }
 }
 
+@include lg-screen {
+  .mb-lg-48 {
+    margin-bottom: 48px;
+  }
+}
 
-
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-sm-24 {
+  @include sm-screen {
+    margin-bottom: 24px;
+  }
+}
 .box-padding {
   border-radius: 12px;
-  padding: 48px 24px;
+  padding: 40px 24px;
 }
 
 .section-box {
@@ -220,6 +232,7 @@
 
 .last-item {
   margin-bottom: 0px !important;
+
   @include lg-screen {
     margin-bottom: 24px !important;
   }
@@ -264,8 +277,10 @@ input[type="radio"]:checked::before {
   background: rgb(var(--theme-color));
   border-radius: 50%;
   position: absolute;
-  top: 21%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* perfectly center */
 }
 
 .discount-badge {

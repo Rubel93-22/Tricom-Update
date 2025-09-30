@@ -1,31 +1,32 @@
  @use '../utils/' as *;
-.dashboard-sideNav { 
-    padding: 48px 24px;
-    background: #fff;
-    border-radius: 10px;
-    .nav {
-        gap: 8px;
-        .nav-item {
-            .nav-link {
-                padding: 12px 20px;
-                display: inline-flex;
-                gap: 8px;
-                align-items: center;
-                color: rgb(var(--heading-color));
-                font-size: 15px;
-                font-weight: 400;
-                // &:hover {
-                //     border-radius: 5px;
-                //     background: #F1F2F4;
-                //     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.30);
-                // }
-            }
 
-            .active {
-                border-radius: 5px;
-                background: #F1F2F4;
-                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.30);
-            }
-        }
-    }
-}
+ .dashboard-sideNav {
+     padding: 40px 24px;
+     background: #fff;
+     border-radius: 10px;
+
+     .nav {
+         gap: 8px;
+
+         .custom-nav-item {
+             .custom-nav-link {
+                 padding: 12px;
+                 display: inline-flex;
+                 gap: 8px;
+                 align-items: center;
+                 color: rgb(var(--heading-color));
+                 font-size: 15px;
+                 font-weight: 400;
+             }
+             &.active {
+                 border-radius: 4px;
+                 background: #F5F5F5;
+             }
+             &:hover {
+                border-radius: 4px;
+                 background: #F5F5F5;
+             }
+
+         }
+     }
+ }

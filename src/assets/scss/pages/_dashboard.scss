@@ -1,63 +1,60 @@
   @use '../utils/' as *;
 
   .dashboard-area {
-      margin-top: 83px;
+      .widget-wrapper {
+          border-radius: 12px;
+          padding: 40px 12px;
+          background: #fff;
 
-      .dashboard-content {
-          padding: 96px 0;
-          border-radius: 10px;
-
-          .widget-box {
-              padding: 48px 24px;
-              margin-bottom: 48px;
-              display: grid;
-              gap: 24px;
+          .widget {
+              padding: 76px 48px;
+              text-align: center;
               border-radius: 12px;
-              background: #fff;
-              grid-template-columns: repeat(3, 1fr);
-              .widget {
-                  padding: 76px 48px;
-                  text-align: center;
-                  border-radius: 12px;
-                  .desc-title {
-                    line-height: 20px;
-                      color: #FFF;
-                      margin-bottom: 16px;
+
+              .desc-title {
+                  color: #FFF;
+                  margin-bottom: 16px;
+
+                  @include four-xl-screen {
+                      font-size: 24px;
                   }
 
-                  p {
-                      line-height: 12px;
-                      color: #fff;
+                  @include xl-screen {
+                      font-size: 24px;
                   }
 
-                  &:first-child {
-                      background: #0062A2;
-                  }
+              }
 
-                  &:nth-child(2) {
-                      background: #6B7B3E;
-                  }
+              p {
+                  line-height: 12px;
+                  color: #fff;
+              }
+          }
+      }
 
-                  &:nth-child(3) {
-                      background: #00582F;
-                  }
+      .cart-table {
+          margin-bottom: 0px;
+      }
 
-                  &:nth-child(4) {
-                      background: #FDC040;
-                  }
+  }
 
-                  &:nth-child(5) {
-                      background: #3BB77E;
-                  }
 
-                  &:last-child {
-                      background: #FF3F3F;
-                  }
+  .row {
+      >div {
+
+          &:nth-of-type(7),
+          &:nth-of-type(8) {
+              .item {
+                  margin-bottom: 0;
               }
           }
 
-          .cart-table {
-              margin-bottom: 0px;
+          @media (max-width: 767px) {
+              &:nth-of-type(7) {
+                  .item {
+                      margin-bottom: 24px;
+                  }
+              }
           }
       }
   }
