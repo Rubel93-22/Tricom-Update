@@ -1,33 +1,5 @@
 //* ============================ Media Breakpoint for Each Device Start ============================ */
 
-// $breakpoints: ( 
-//   xxsm: 375px,
-//   xsm: 480px,
-//   xs: 575px,
-//   sm: 767px,
-//   md: 991px,
-//   lg: 1199px, 
-//   xl: 1399px, 
-//   xxl: 1599px
-// );
-
-// /// Usage: @include sm-screen; or @include respond-to(sm, orientation: landscape);
-// @mixin respond-to($size, $orientation: null) {
-//   @if map-has-key($breakpoints, $size) {
-//     $query: "screen and (max-width: #{map-get($breakpoints, $size)})";
-
-//     @if $orientation != null {
-//       $query: "#{$query} and (orientation: #{$orientation})"; 
-//     }
-
-//     @media #{$query} {
-//       @content;
-//     }
-//   } @else {
-//     @warn "No breakpoint found for `#{$size}`.";
-//   }
-// }
-
 //Mobile Landscape
 @mixin landscape {
   @media all and (orientation: landscape) { 

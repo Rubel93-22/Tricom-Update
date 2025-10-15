@@ -41,9 +41,6 @@
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 160%;
-                        //   @include respond (sm) {
-                        //     font-size: 14px;
-                        //   }
                     }
                 }
 
@@ -53,14 +50,6 @@
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 160%;
-                    // @include respond (sm) {
-                    //   font-size: 14px;
-                    //   line-height: 1.6;
-                    // }
-
-                    // @include respond (xs) {
-                    //   margin: 15px 0;
-                    // }
                 }
 
                 .trending-price {
@@ -107,16 +96,9 @@
                         padding: 12px 82px;
                     }
 
-                    
                     @include mobile-screen {
                         padding: 12px 60px; 
                     }
-
-                    // @include respond (sm) {
-                    //   margin-top: 22px;
-                    //   font-size: 16px;
-                    // }
-
                 }
             }
         }

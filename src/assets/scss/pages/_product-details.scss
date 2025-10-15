@@ -5,7 +5,7 @@
     margin-top: 87px;
 
     &__single-product {
-        margin-bottom: 24px; 
+        margin-bottom: 24px;
 
         .product-gallary {
             .main-slider {
@@ -56,6 +56,7 @@
                     margin: 10px 0;
                     font-size: 26px;
                 }
+
                 @include mobile-screen {
                     font-size: 22px;
                 }
@@ -259,12 +260,6 @@
                 }
             }
 
-
-
-
-
-            &__para {}
-
         }
 
     }
@@ -287,8 +282,6 @@
                 justify-content: flex-start;
             }
         }
-
-        &--item {}
 
         &--link {
             display: inline-block;
@@ -315,6 +308,7 @@
         margin-top: 36px;
         background: #fff;
         border-radius: var(--border-radius);
+
         @include sm-screen {
             padding: 35px 24px;
         }
@@ -477,10 +471,6 @@
                         padding-left: 0px;
                     }
 
-                    &__para {}
-
-                    &__form {}
-
                     &__text-area {
                         padding-top: 5px;
                         padding-left: 5px;
@@ -512,6 +502,7 @@
 
                     .reviews-sort {
                         margin-bottom: 24px;
+
                         @include sm-screen {
                             margin-bottom: 20px;
                         }
@@ -553,10 +544,60 @@
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 160%;
+
                             @include sm-screen {
                                 margin-top: 5px;
                             }
                         }
+                    }
+                }
+
+                nav {
+                    div {
+                        justify-content: center !important;
+                        flex-wrap: wrap !important;
+                        overflow: auto;
+                        padding-bottom: 8px;
+
+                        @include lg-screen {
+                            justify-content: start !important;
+                        }
+                    }
+                }
+
+                .pagination {
+                    margin-top: 48px;
+                    gap: 10px;
+
+                    @include md-screen {
+                        overflow: auto;
+                    }
+
+                    .page-item {
+
+                        .page-link {
+                            display: flex;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            color: rgb(var(--heading-color));
+                            font-size: 16px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            padding: 14px;
+                            border: 1px solid rgb(var(--body-color));
+
+                            @include msm-screen {
+                                width: fit-content;
+                            }
+
+                            &.active {
+                                color: #fff;
+                                background: rgb(var(--heading-color));
+                            }
+
+                        }
+
                     }
                 }
             }

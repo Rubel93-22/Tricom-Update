@@ -182,7 +182,6 @@ $(document).ready(function () {
   $('.product-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    rows: 2,
     arrows: true,
     dots: false,
     infinite: true,
